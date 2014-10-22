@@ -27,6 +27,9 @@ load_button = Tkinter.Button( master,text = 'load',command
 encrypt_button = Tkinter.Button( master,text = 'encrypt',command 
                                  = load.encrypt)
 
+decrypt_button = Tkinter.Button( master,text = 'decrypt',command 
+                                 = load.decrypt)
+
 
 ##fullscreen mode
 master.geometry("{0}x{1}+0+0".format(master.winfo_screenwidth(),
