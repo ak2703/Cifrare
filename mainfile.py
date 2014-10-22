@@ -47,6 +47,8 @@ load_button.place( relx=0.5 , rely=0.1 ,
 encrypt_button.place( relx=0.5 , rely=0.2 ,
                        relheight = 0.05 ,relwidth = 0.1)
 
+decrypt_button.place( relx=0.5 , rely=0.3 ,
+                       relheight = 0.05 ,relwidth = 0.1)
 
 ## mainloop
 master.mainloop()
