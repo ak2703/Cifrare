@@ -57,12 +57,12 @@ back_label.pack()
 # place items
 back_label.place(x=0,y=0,relheight=1,relwidth = 1)
 
-load_button.place( relx=0.5 , rely=0.1 ,
+load_button.place( relx=0.5 , rely=0.2 ,
                      height = 50 ,width = 200)
-encrypt_button.place( relx=0.5 , rely=0.2 ,
+encrypt_button.place( relx=0.5 , rely=0.4 ,
                        height = 50 ,width = 200)
 
-decrypt_button.place( relx=0.5 , rely=0.3 ,
+decrypt_button.place( relx=0.5 , rely=0.6 ,
                        height = 50 ,width = 200)
 
 
