@@ -21,13 +21,24 @@ import sys
 ## set up master window
 master = Tkinter.Tk()
 
-## set buttons and other things
-load_button = Tkinter.Button( master,text = 'load',command 
+## set up images 
+back_image = Tkinter.PhotoImage(file = './img/back.png')
+load_image = Tkinter.PhotoImage(file = './img/load.png'  )
+enc_image  = Tkinter.PhotoImage(file = './img/enc.png'   )
+dec_image  = Tkinter.PhotoImage(file = './img/dec.png'   )
+
+
+## set background label
+back_label = Tkinter.Label(master , image = back_image)
+
+
+## set buttons 
+load_button = Tkinter.Button( master,image = load_image,command 
                               = load.load)
-encrypt_button = Tkinter.Button( master,text = 'encrypt',command 
+encrypt_button = Tkinter.Button( master,image = enc_image,command 
                                  = load.encrypt)
 
-decrypt_button = Tkinter.Button( master,text = 'decrypt',command 
+decrypt_button = Tkinter.Button( master,image = dec_image,command 
                                  = load.decrypt)
 
 
@@ -39,16 +50,22 @@ master.geometry("{0}x{1}+0+0".format(master.winfo_screenwidth(),
 ## pack items
 load_button.pack()
 encrypt_button.pack()
+decrypt_button.pack()
+back_label.pack()
 
 
 # place items
+back_label.place(x=0,y=0,relheight=1,relwidth = 1)
+
 load_button.place( relx=0.5 , rely=0.1 ,
-                     relheight = 0.05 ,relwidth = 0.1)
+                     height = 50 ,width = 200)
 encrypt_button.place( relx=0.5 , rely=0.2 ,
-                       relheight = 0.05 ,relwidth = 0.1)
+                       height = 50 ,width = 200)
 
 decrypt_button.place( relx=0.5 , rely=0.3 ,
-                       relheight = 0.05 ,relwidth = 0.1)
+                       height = 50 ,width = 200)
+
 
 ## mainloop
 master.mainloop()
+
