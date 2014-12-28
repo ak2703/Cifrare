@@ -66,6 +66,6 @@ decrypt_button.place( relx=0.5 , rely=0.6 ,
                        height = 50 ,width = 200)
 
 
-## mainloop
+# mainloop
 master.mainloop()
 
